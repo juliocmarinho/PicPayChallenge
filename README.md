@@ -62,10 +62,6 @@ O projeto segue a seguinte estrutura:
 - `src/main/resources`: Recursos do projeto.
   - `application.properties`: Configurações do Spring Boot.
 
-## Contribuição
-
-Contribuições são bem-vindas! Sinta-se à vontade para abrir um pull request ou uma issue para discutir possíveis melhorias ou novas funcionalidades.
-
 ## Licença
 
 Este projeto está licenciado sob a [MIT License](LICENSE).
