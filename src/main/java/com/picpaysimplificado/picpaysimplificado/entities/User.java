@@ -3,7 +3,6 @@ package com.picpaysimplificado.picpaysimplificado.entities;
 
 import jakarta.persistence.*;
 import lombok.Data;
-import org.hibernate.usertype.UserType;
 
 import java.math.BigDecimal;
 
@@ -11,6 +10,7 @@ import java.math.BigDecimal;
 @Table(name = "tb_user")
 @Data
 public class User {
+
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
