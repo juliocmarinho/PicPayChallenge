@@ -1,4 +1,4 @@
-package com.picpaysimplificado.picpaysimplificado.transaction;
+package com.picpaysimplificado.picpaysimplificado.entities;
 
 
 import com.picpaysimplificado.picpaysimplificado.entities.User;
