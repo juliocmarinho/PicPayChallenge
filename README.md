@@ -9,7 +9,7 @@ O desafio pode ser visto em: https://github.com/PicPay/picpay-desafio-backend.
 - Transferência de dinheiro entre usuários e lojistas.
 - Consulta de saldo antes da transferência para validar se o usuário possui fundos suficientes.
 - Consulta a um serviço autorizador externo antes de finalizar a transferência.
-- Notificação por e-mail ou SMS no recebimento de pagamento.
+- Notificação por e-mail ou SMS no recebimento de pagamento. (Ainda em Testes)
 
 ## Requisitos
 
