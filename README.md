@@ -1,23 +1,23 @@
 # BackEnd PicPay Challenge
 
-Este é um sistema RESTful desenvolvido em Spring Boot para lidar com as funcionalidades do desafio proposto pelo PicPay.
-O desafio pode ser visto em: https://github.com/PicPay/picpay-desafio-backend.
+This is a RESTful system developed in Spring Boot to handle functionalities as proposed in the PicPay challenge.
+The challenge can be viewed at: https://github.com/PicPay/picpay-desafio-backend.
 
-## Funcionalidades Principais
+## Main Features
 
-- Cadastro de usuários com validação de CPF/CNPJ e e-mail únicos no sistema.
-- Transferência de dinheiro entre usuários e lojistas.
-- Consulta de saldo antes da transferência para validar se o usuário possui fundos suficientes.
-- Consulta a um serviço autorizador externo antes de finalizar a transferência.
-- Notificação por e-mail ou SMS no recebimento de pagamento. (Ainda em Testes)
+- User registration with validation of unique CPF/CNPJ and email in the system.
+- Money transfer between users and merchants.
+- Checking account balance before transfer to validate if the user has sufficient funds.
+- Query to an external authorization service before finalizing the transfer.
+- Notification via email or SMS upon receiving payment. (Still in Testing)
 
-## Requisitos
+## Requirements
 
 - Java 17
 - Maven
 - Spring Boot 3.1.5
 
-## Dependências
+## Dependencies
 
 - `spring-boot-starter-data-jpa`
 - `spring-boot-starter-web`
@@ -26,42 +26,42 @@ O desafio pode ser visto em: https://github.com/PicPay/picpay-desafio-backend.
 - `lombok`
 - `spring-boot-starter-test`
 
-## Execução do Projeto
+## Running the Project
 
-Para executar o projeto localmente, você pode seguir estas etapas:
+To run the project locally, you can follow these steps:
 
-1. Clone o repositório:
+1. Clone the repository:
 
 ```bash
 git clone https://github.com/juliocmarinho/PicPayChallenge.git
 cd PicPayChallenge
 ```
 
-2. Compile e execute o projeto usando o Maven:
+2. Compile and run the project using Maven:
 
 ```bash
 mvn spring-boot:run
 ```
 
-3. O servidor estará acessível em [http://localhost:8080](http://localhost:8080).
+3. The server will be accessible at [http://localhost:8080](http://localhost:8080).
 
-## Estrutura do Projeto
+## Project Structure
 
-O projeto segue a seguinte estrutura:
+The project follows the following structure:
 
-- `src/main/java/com.picpaysimplificado.picpaysimplificado`: Pacote principal do projeto.
-  - `controllers`: Controladores REST.
-  - `dtos`: DTOs para transferência de dados.
-  - `entities`: Entidades do sistema.
-  - `repositories`: Interfaces de Repositórios JPA.
-  - `services`: Lógica de negócios e serviços.
-  - `infra`: Pacote de infraestrutura.
-    - `AppConfig`: Configuração do Spring Boot, incluindo o restTemplate.
-    - `ControllerExceptionHandler`: Handler de exceções.
+- `src/main/java/com.picpaysimplificado.picpaysimplificado`: Main package of the project.
+  - `controllers`: REST Controllers.
+  - `dtos`: Data Transfer Objects for data transfer.
+  - `entities`: System entities.
+  - `repositories`: JPA Repository Interfaces.
+  - `services`: Business logic and services.
+  - `infra`: Infrastructure package.
+    - `AppConfig`: Spring Boot configuration, including restTemplate.
+    - `ControllerExceptionHandler`: Exception handler.
   
-- `src/main/resources`: Recursos do projeto.
-  - `application.properties`: Configurações do Spring Boot.
+- `src/main/resources`: Project resources.
+  - `application.properties`: Spring Boot configurations.
 
-## Licença
+## License
 
-Este projeto está licenciado sob a [MIT License](LICENSE).
+This project is licensed under the [MIT License](LICENSE).
