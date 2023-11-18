@@ -31,7 +31,13 @@ public class User {
     @Enumerated(EnumType.STRING)
     private UserType userType;
 
+
     public User(UserDTO data){
-        BeanUtils.copyProperties(data, this);
+        this.name = data.name();
+        this.document = data.document();
+        this.balance = data.balance();
+        this.email = data.email();
+        this.password = data.password();
+        this.userType = data.userType();
     }
 }
