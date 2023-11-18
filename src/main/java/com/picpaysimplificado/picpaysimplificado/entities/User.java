@@ -1,14 +1,20 @@
 package com.picpaysimplificado.picpaysimplificado.entities;
 
 
+import com.picpaysimplificado.picpaysimplificado.dtos.UserDTO;
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
+import org.springframework.beans.BeanUtils;
 
 import java.math.BigDecimal;
 
 @Entity(name = "users")
 @Table(name = "tb_user")
 @Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class User {
 
 
@@ -24,4 +30,8 @@ public class User {
     private BigDecimal balance;
     @Enumerated(EnumType.STRING)
     private UserType userType;
+
+    public User(UserDTO data){
+        BeanUtils.copyProperties(data, this);
+    }
 }
